@@ -12,11 +12,11 @@ const longestString = (...args) => {
 console.log(longestString("Likitha","Bindu","Sarayu"))
 
 //2nd way
-function longestString(...arr) {
+function longestString(...str) {
   let longest = "";
-  for(let i = 0;i < arr.length;i++) {
-    if(arr[i].length > longest.length) {
-      longest = arr[i] || longest;
+  for(let i = 0;i < str.length;i++) {
+    if(str[i].length > longest.length) {
+      longest = str[i] || longest;
     } 
   }
   return longest;
