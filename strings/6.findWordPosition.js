@@ -5,7 +5,7 @@
 
 const str = "I am finding Nemo";
 
-const findStringPosition = (str, check) => {
+const findWordPosition = (str, check) => {
   let result = str.split(' ')
   for(let i = 0;i < result.length;i++) {
     if(result[i] === check) {
@@ -14,4 +14,4 @@ const findStringPosition = (str, check) => {
   }  
     return `I can't find ${check}!`;
 }
-console.log(findStringPosition(str, "Nemo"));
+console.log(findWordPosition(str, "Nemo"));
