@@ -7,16 +7,16 @@ for(let i = 0; i < arr.length; i++) {
 }
 
 let highestValue = arr[0];
-for(const keys in obj) {
-  if(obj[keys] > highestValue) {
-    highestValue = obj[keys]
+for(const values in obj) {
+  if(obj[values] > highestValue) {
+    highestValue = obj[values]
   }
 }
 
 let highestKey = arr[0];
-for(const values in obj) {
-  if(obj[values] === highestValue) {
-   highestKey = values;
+for(const keys in obj) {
+  if(obj[keys] === highestValue) {
+   highestKey = keys;
   }
 }
 console.log(highestKey)
